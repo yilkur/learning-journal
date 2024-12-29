@@ -1,0 +1,201 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap');
+
+/* Global Styles */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #151515;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+a {
+  color: #151515;
+  text-decoration: none;
+}
+
+/* Header Styles */
+header {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 23px;
+  height: 23px;
+  margin-right: 1em;
+}
+
+.slogan {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+nav {
+  margin-left: auto;
+}
+
+header ul {
+  display: flex;
+  gap: 2em;
+  padding-left: 0;
+}
+
+header ul li {
+  list-style: none;
+  text-transform: uppercase;
+  align-self: flex-end;
+  font-size: 0.75rem;
+}
+
+header ul li a {
+  color: inherit;
+}
+
+/* Layout */
+.container {
+  max-width: 1085px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/images/hero.png') no-repeat;
+  background-size: cover;
+  height: 290px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1.5em;
+}
+
+.hero-title {
+  margin: 0;
+}
+
+.hero .date {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero p {
+  margin: 0;
+}
+
+.hero a {
+  color: white;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  column-gap: 2em;
+  flex-wrap: wrap;
+}
+
+.intro div {
+  flex: 1 300px;
+}
+
+/* Articles Section */
+section.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+article {
+  padding: 1em;
+  border-radius: 6px;
+}
+
+article.hero:hover {
+  filter: brightness(95%);
+}
+
+article:not(.hero):hover {
+  background: whitesmoke;
+}
+
+.article-img {
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.article-title {
+  margin: 1em 0 0 0;
+}
+
+.article-text {
+  margin: 0;
+}
+
+a.view-more {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 3em;
+}
+
+/* Detail Page */
+.detail .date {
+  font-size: 0.8rem;
+}
+
+.detail h1 {
+  margin: 0.5em 0;
+}
+
+.detail .article-text {
+  margin: 0.5em 0;
+}
+
+/* About Section */
+.about-img {
+  width: 180px;
+  height: auto;
+  align-self: flex-start;
+}
+
+/* Recent Section */
+.recent {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3em;
+}
+
+/* Footer */
+footer {
+  background: #202020;
+  text-align: center;
+  color: white;
+  padding: 3em;
+  margin-top: 3em;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.75em;
+}
